@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-decoration: none;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* ------------------------- */
+.dashboad-content {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 5px;
+  background: whitesmoke;
+}
+.dashboad-content .risk-owner {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(182, 182, 182);
+  padding: 5px 0;
+}
+.dashboad-content .main-dash-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Left side Section */
+.dashboad-content .left-dashboad-content {
+  width: 5%;
+  padding: 20px;
+  background: #fff;
+}
+.left-dashboad-content .left-section {
+  position: relative;
+}
+.left-section .logo {
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+}
+.left-section .logo img {
+  width: 100%;
+  height: 100%;
+}
+.left-section .btn-controls {
+  position: relative;
+  padding: 10px; 
+}
+.btn-controls {
+  position: relative;
+}
+.btn-controls p {
+  position: relative;
+  font-family:sans-serif;
+  color: grey;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 15px ;
+  transition: .5s;
+}
+.btn-controls p:hover {
+  cursor: pointer;
+  color: #0057f8;
+  transform: translateX(5px);
+}
+.btn-controls p i {
+  font-size: 18px;
+  margin-right: 20px;
+}
+.btn-controls span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #fcc1c1;
+  border-radius: 50%;
+  padding: 2px;
+  width: 20px;
+  text-align: center;
+}
+.btn-controls p.active {
+  color: #0057f8;
+}
+
+/* Right side section */
+.dashboad-content .right-dashboad-content {
+  width: 80%;
+}
+.navbar-section {
+  background: white;
+  margin: 0 5px;
+}
+.navbar-section .nav-content {
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.searching {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid rgb(204, 204, 204);
+  background: #f6f6f6;
+  width: 350px;
+}
+
+.nav-content .searching span {
+  font-size: 18px;
+  color: grey;
+  margin-top: -5px;
+}
+.nav-content .searching .search {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  margin-left: 14px;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  width: 100%;
+}
+.nav-content .search::placeholder {
+  font-weight: 500;
+}
+.nav-content .profile {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.profile .logout {
+  text-decoration: none;
+  margin: 0 8px;
+  color: #949494;
+  font-weight: 600;
+  transition: .5s;
+}
+.profile .logout:hover {
+  color: #0095f8;
+}
+.profile i{
+  font-size: 18px;
+  color: #000;
+  margin: 0 8px;
+  transition: .5s;
+}
+.profile i:hover {
+  color: #0095f8;
+}
+.profile img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.right-section-content {
+  padding: 70px 20px;
+}
+.risk-owner-welcome {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-left: 3px solid rgb(82, 255, 2);
+}
+.risk-owner-welcome h1 {
+  font-size: 28px;
+  font-weight: 500;
+  color: grey;
+  padding-left: 20px;
+}
+.risk-owner-welcome .add-risk-owner {
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+  padding: 8px;
+  background: #0095f8;
+  color: white;
+  border-radius: 5px;
+  transition: .4s;
+}
+.risk-owner-welcome .add-risk-owner:hover {
+  cursor: pointer;
+  background-color: #0057f8;
+}
+.table-section {
+  margin: 50px 0;
+  overflow: hidden;
+}
+.table-section table {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.table-section table thead tr th{
+  padding: 8px;
+  background: #dfdfdf;
+  text-transform: uppercase;
+  color: grey;
+  font-weight: 500;
+}
+.table-section table tbody tr td {
+  color: #707070;
+  font-weight: 500;
+}
+.table-section table tbody tr td button {
+  border: 0;
+  outline: 0;
+  margin: 5px;
+}
+.table-section table tbody tr td .edit {
+  color: #0095f8;
+}
+.table-section table tbody tr td .delete {
+  color: #f80000;
+}
+.table-section table tbody tr td .check {
+  color: #008a1e;
+}
+
+@media screen and (max-width: 660px) {
+  .nav-content .searching .search {
+    width: 50%;
+  }
+  .risk-owner-welcome h1 {
+    font-size: 25px;
+  }
+}
